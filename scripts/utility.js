@@ -7,14 +7,11 @@ const randomNumber = Math.random()*7
    const index = Math.round(randomNumber)    
    const button = buttonString[index]
 
-//    console.log(index,button)
+
 
    return button
    
 }
-function addColor(elementId){
-    const element = document.getElementById(elementId)
-    element.classList.add('bg-green-300')
-}
+
 
 

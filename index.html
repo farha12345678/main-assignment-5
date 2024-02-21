@@ -134,10 +134,10 @@
                     <div class="font-inter pl-5 w-56 pt-5">
                         <h1 class="font-extrabold text-4xl">20% OFF</h1>
                         <p class="font-semibold text-xl">on your next purchase</p>
-                        <p class="font-medium text-xl text-[#3e4350a2]">use by January 2024</p>
+                        <p class="font-medium text-xl text-[#3e4350a2] ">use by January 2024</p>
                     </div>
                     <img class="h-44" src="images/cupon-devider.png" alt="">
-                    <div class="font-raleway pt-10 pr-4 ">
+                    <div class="font-raleway pt-10 pr-4  ">
                         <h4 class="font-bold text-4xl pb-2">Couple20</h4>
                         <p class="font-medium text-xl text-[#3e4350a2]">Coupon Code</p>
                     </div>
@@ -172,9 +172,8 @@
                         <p class="text-lg font-normal font-inter">Coach-009-WEB ! AC_Business</p>
                     </div>
                     <div class="pl-20">
-                        <button class="btn border border-green-400 bg-green-200 text-green-600"><span><img
-                                    src="images/seat-green.png" alt=""></span>40 seats
-                            left</button>
+                        <button  class="btn border border-green-400 bg-green-200 text-green-600"><img
+                                    src="images/seat-green.png" alt=""><span id="left-btn">40</span>Seats Left</button>
                     </div>
 
                     <div class="pl-72 items-center ">
@@ -285,7 +284,7 @@
                     <table class="table h-72 w-[440px] border bg-[#F7F8F8] mx-20 mt-5 ">
                         <!-- head -->
                         <thead>
-                            <tr>
+                            <tr class="flex justify-around">
 
                                 <th class="text-base font-medium font-inter text-black">Seat <span id="seat-count"
                                         class="text-green-500 border rounded-full bg-green-100">0</span></th>
@@ -294,19 +293,9 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- row 1 -->
-                            <tr id="selected-container" class="grid">
-                                <td class="ml-10"></td>
-                                <td class="space-x-10"></td>
-                                <td class="space-x-10"></td>
-                                <td class="mx-10"></td>
-
+                            <tr id="slected-container" >
+                                
                             </tr>
-
-                            <!-- row 2 -->
-
-                            <!-- row 3 -->
-
                             <hr>
                             <tr>
                                 <td class="text-base font-medium font-inter text-black">Total price</td>
@@ -314,8 +303,8 @@
                                 <td class="text-base font-medium font-inter text-black">BDT <span
                                         id="total-price">0</span></td>
                             </tr>
-                            <tr>
-                                <td class="flex justify-center" id="coupon-sec"><input type="text" placeholder="Have you any Coupon?"><button
+                            <tr id="coupon-sec">
+                                <td class="flex justify-center" ><input id="coupon-text" type="text" placeholder="Have you any Coupon?"><button onclick="couponBtn('apply-btn')"
                                         class="btn text-white bg-green-500 ">Apply</button></td>
                             </tr>
                             <tr>
