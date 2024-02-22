@@ -89,7 +89,7 @@ function couponBtn(status){
 const discount = totalCost * 0.15;
 document.getElementById('gran-total').innerText = totalCost-discount
 
-        } else if ( couponCode == 'COUPLE20'){
+        } else if ( couponCode == 'COUPLE 20'){
             const discount = totalCost * 0.2;
 document.getElementById('gran-total').innerText = totalCost-discount
 
